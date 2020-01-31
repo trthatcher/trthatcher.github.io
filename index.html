@@ -15,21 +15,20 @@
             font-weight: inherit;
         }
 
-        html {
-            font: 300 24px "Roboto", sans-serif;
-            text-align: center;
-        }
+        html { font: 300 24px "Roboto", sans-serif; }
 
         main {
             margin: 0 auto;
-            max-width: 39rem;
+            max-width: 35rem;
         }
 
-        main > * {
-            margin: 0 0.5rem 0.5rem 0.5rem; 
-        }
+        main > * { margin: 0 0.5rem 0.5rem 0.5rem; }
 
         main > :first-child { margin: 0.5rem; }
+
+        header { text-align: center; }
+
+        header > * { margin: 0 0.5rem 0.5rem 0.5rem; }
 
         h1 {
             font-size: 2rem;
@@ -79,9 +78,11 @@
 <body>
     <main role="main">
         <img class="profile" src="tim.png" />
-        <h1>Tim Thatcher</h1>
-        <h2>Machine Learning Developer</h2>
-        <h3>Toronto, Canada</h3>
+        <header>
+            <h1>Tim Thatcher</h1>
+            <h2>Data Scientist &amp; Developer</h2>
+            <h3>Toronto, Canada</h3>
+        </header>
         <nav>
             <ul>
                 <li><a href="https://github.com/trthatcher">
@@ -98,6 +99,9 @@
                 </a></li>
             </ul>
         </nav>
+        <h2>About</h2>
+        <p>Hi, I'm Tim - a data scientist and developer based in Toronto. I have an interest in the software engineering principles around the development, deployment and monitoring of machine learning models. With the proper discipline, we can be agile and extract more value from our machine learning applications.</p>
+        <p>My resume can be found <b><a href="resume.pdf">here</a></b>.</p>
     </main>
 </body>
 </html>
